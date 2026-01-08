@@ -1,2 +1,2 @@
-//hola
-//gay
+public class HelloWorld {
+System.Out.printIn("Hello World")
