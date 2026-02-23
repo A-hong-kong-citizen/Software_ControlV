@@ -80,6 +80,14 @@ public class BasicOpMode_Iterative extends OpMode
 
         // Tell the driver that initialization is complete.
         telemetry.addData("Status", "Initialized");
+        
+        //leaving the base earns 3 points
+        leftDrive.setPower(0.5);
+        rightDrive.setPower(0.5);
+        thread.sleep(2000);
+        leftDrive.setPower(0);
+        rightDrive.setPower(0);
+        telemetry.addData("Leaved Base");
     }
 
     /*
@@ -87,6 +95,7 @@ public class BasicOpMode_Iterative extends OpMode
      */
     @Override
     public void init_loop() {
+
     }
 
     /*
