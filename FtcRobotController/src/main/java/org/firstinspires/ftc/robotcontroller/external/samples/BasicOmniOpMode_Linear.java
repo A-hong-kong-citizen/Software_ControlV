@@ -103,6 +103,18 @@ public class BasicOmniOpMode_Linear extends LinearOpMode {
         telemetry.addData("Status", "Initialized");
         telemetry.update();
 
+        frontLeftDrive.setPower(0.5);
+        frontRightDrive.setPower(0.5);
+        backLeftDrive.setPower(0.5);
+        backRightDrive.setPower(0.5);
+
+        thread.sleep(2000);
+        
+        frontLeftDrive.setPower(0);
+        frontRightDrive.setPower(0);
+        backLeftDrive.setPower(0);
+        backRightDrive.setPower(0);
+        
         waitForStart();
         runtime.reset();
 
